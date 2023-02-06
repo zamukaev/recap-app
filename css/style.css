@@ -1,28 +1,34 @@
-html,
-body {
-  height: 100%;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-}
-* {
+/*
+damit setze ich einige styles zum 0
+*/
+*,
+*::after,
+*::before {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  line-height: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
 }
 
 .wrapper {
   min-height: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  color: white;
-  display: flex;
-  flex-direction: column;
+  color: #000;
 }
 .header {
+  color: white;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: #000;
+  border-bottom: 2px solid #000;
 }
 .header__container {
   padding: 20px;
@@ -34,19 +40,91 @@ body {
 }
 
 .page {
-  flex: 1 0 auto;
+  margin-top: 80px;
 }
-
+.page__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0px 15px;
+}
+.page__column {
+  position: relative;
+  padding: 0 15px;
+  flex: 0 1 25%;
+  margin: 0px 0px 30px 0px;
+}
+.page__item {
+  height: 100%;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 2px 10px #333;
+  border-radius: 5px;
+}
+.page__item:hover {
+  box-shadow: 0px 2px 15px #333;
+}
+.page__title {
+  margin-top: 20px;
+  font-size: 16px;
+}
+.page__item img {
+  position: absolute;
+  top: -10px;
+  right: 15px;
+  width: 40px;
+}
+.page__button {
+  margin-top: 30px;
+  background: none;
+  border: 1px solid #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.page__button:hover {
+  background: lightgray;
+}
+.page__tags {
+  align-self: flex-start;
+  margin-top: 30px;
+}
+.tags__link {
+  text-decoration: none;
+  color: #000;
+  padding: 5px;
+  background: lightgray;
+  border-radius: 5px;
+}
+.tags__link:hover {
+  background: rgb(226, 226, 226);
+}
 .footer {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
 }
+
 .nav {
   display: flex;
   justify-content: center;
   gap: 20px;
-  background: #000;
+  background: white;
   padding: 20px;
+  border-top: 2px solid #000;
+}
+.link img {
+  cursor: pointer;
+  width: 40px;
+}
+.link-home img:hover {
+  margin-top: -2px;
+}
+.link-bookmarks img:hover {
+  margin-top: -2px;
+}
+.link-profile img:hover {
+  margin-top: -2px;
 }
