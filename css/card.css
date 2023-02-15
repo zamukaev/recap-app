@@ -1,0 +1,66 @@
+.qutz-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.qutz-card__items {
+  position: relative;
+}
+.qutz-card__qustion,
+.qutz-card__answer {
+  position: relative;
+  height: 100%;
+  max-width: 290px;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.47);
+  border-radius: 5px;
+}
+.question__active {
+  transform: rotateY(200deg);
+  backface-visibility: hidden;
+}
+.qustion__text,
+.answer__text {
+  margin: 25px 0px;
+}
+.qustion__button,
+.answer__button {
+  margin-bottom: 25px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.qutz-card__answer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: rotateY(200deg);
+  backface-visibility: hidden;
+}
+.answer__active {
+  transform: rotateY(0);
+  backface-visibility: hidden;
+}
+.answer__text {
+}
+.answer__button {
+}
+.qutz-card__tags {
+  align-self: flex-start;
+  display: flex;
+}
+.tags__item {
+  padding: 5px;
+}
+.bookmark {
+  position: absolute;
+  top: -15px;
+  right: 5px;
+}
+.bookmark img {
+  width: 50px;
+}
