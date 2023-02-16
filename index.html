@@ -8,22 +8,82 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="wrapper">
+    <section class="wrapper">
       <header class="header">
         <section class="header__container _container">
           <h1 class="header__title title">Quiz App</h1>
         </section>
       </header>
 
-      <main class="page"></main>
+      <main class="page">
+        <div class="page__container">
+          <section class="qutz-card">
+            <section class="qutz-card__items">
+              <section class="qutz-card__qustion qustion">
+                <p class="qustion__text">
+                  What proprety flips the axes in flexbox?
+                </p>
+                <button class="qustion__button button">Show answer</button>
+                <ul class="qutz-card__tags tags">
+                  <li class="tags__item"><a href="#">#html</a></li>
+                  <li class="tags__item"><a href="#">#flexbox</a></li>
+                  <li class="tags__item"><a href="#">#css</a></li>
+                </ul>
+                <span class="bookmark"
+                  ><img
+                    src="https://img.icons8.com/external-phatplus-lineal-phatplus/256/external-bookmarks-essential-phatplus-lineal-phatplus.png"
+                    alt=""
+                /></span>
+              </section>
+              <section class="qutz-card__answer answer">
+                <p class="answer__text">
+                  What proprety flips the axes in flexbox!
+                </p>
+                <button class="answer__button button">Show question</button>
+                <ul class="qutz-card__tags tags">
+                  <li class="tags__item"><a href="#">#html</a></li>
+                  <li class="tags__item"><a href="#">#flexbox</a></li>
+                  <li class="tags__item"><a href="#">#css</a></li>
+                </ul>
+              </section>
+            </section>
+          </section>
+        </div>
+      </main>
 
       <footer class="footer">
         <nav class="nav">
-          <a href="#" class="home">home</a>
-          <a href="#" class="bookmarks">bookmarks</a>
-          <a href="#" class="profile">profile</a>
+          <ul class="menu">
+            <li>
+              <a class="menu__link-home link" href="/">
+                <img
+                  class="menu__image"
+                  src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/256/external-home-multimedia-kiranshastry-lineal-kiranshastry.png"
+                  alt="home"
+                />
+              </a>
+            </li>
+            <li>
+              <a class="menu__link-bookmarks link" href="./bookmarks.html"
+                ><img
+                  class="menu__image"
+                  src="https://img.icons8.com/external-phatplus-lineal-phatplus/256/external-bookmarks-essential-phatplus-lineal-phatplus.png"
+                  alt="bookmarks"
+              /></a>
+            </li>
+            <li>
+              <a class="menu__link-profile link" href="./profile.html">
+                <img
+                  class="menu__image"
+                  src="https://img.icons8.com/pastel-glyph/256/gender-neutral-user.png"
+                  alt="profile"
+                />
+              </a>
+            </li>
+          </ul>
         </nav>
       </footer>
-    </div>
+    </section>
+    <script src="./js/script.js"></script>
   </body>
 </html>
